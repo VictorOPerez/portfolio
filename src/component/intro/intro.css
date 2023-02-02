@@ -1,0 +1,157 @@
+.intro {
+  width: 100%;
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+  color: var(--gray);
+  width: 80%;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0;
+}
+.i-icons > * {
+  transform: scale(0.5);
+  cursor: pointer;
+}
+.i-right {
+  /* background-color: bisque; */
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.fotos {
+  width: 100%;
+  height: 100%;
+}
+.fotos > * {
+  width: 100%;
+  position: absolute;
+}
+.fotos img:nth-child(2) {
+  width: 95%;
+  margin-left: 5%;
+}
+.victor {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 6%;
+  border-radius: 120px;
+}
+
+.i-right > :nth-child(2) {
+  width: 27%;
+  margin-left: 15%;
+}
+.floating-div1 {
+  top: -5%;
+  left: 64%;
+}
+
+.floating-div2 {
+  top: 70%;
+  left: -13%;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: #edd0ff;
+  z-index: -9;
+  top: 18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    flex-direction: column;
+    height: 100vh;
+    gap: 7;
+    margin-bottom: 2rem;
+  }
+  .i-right > :nth-child(2) {
+    width: 27%;
+    top: -15%;
+    margin-left: 25%;
+  }
+  .floating-div1 {
+    top: -15%;
+    left: 64%;
+  }
+  .floating-div2 {
+    top: 73%;
+    left: -3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    height: 64rem;
+    gap: 7;
+  }
+  .fotos {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+  }
+  .i-right > :nth-child(2) {
+    width: 27%;
+    top: 3%;
+    margin-left: 35%;
+  }
+  .floating-div1 {
+    /* width:33rem; */
+    top: -15%;
+    left: 24%;
+  }
+  .floating-div2 {
+    /* width:33rem; */
+    top: 67%;
+    left: 3%;
+  }
+}
